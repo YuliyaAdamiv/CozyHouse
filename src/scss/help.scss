@@ -1,0 +1,27 @@
+.box {
+  display: flex;
+  padding: 0 5px;
+  justify-content: center;
+  text-align: center;
+}
+.item {
+  flex: 1 1 auto;
+  margin: 0 5px;
+  font-size: 20px;
+  font-family: 'Georgia';
+  color: #aeaeae;
+  line-height: 1.2;
+}
+.help {
+  padding: 0 calc(50% - 470px);
+  background-color: #ffffff;
+}
+.help h2 {
+  padding: 30px 0;
+  font-size: 35px;
+  font-family: 'Georgia';
+  color: rgb(84, 84, 84);
+  line-height: 1.286;
+  font-weight: normal;
+  text-align: center;
+}

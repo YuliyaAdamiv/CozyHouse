@@ -140,7 +140,7 @@ li:first-child {
 
 .active {
   color: #252525;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .menu-item {
@@ -294,6 +294,36 @@ li:first-child {
   .modal-content {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
+}
+.box {
+  display: flex;
+  padding: 0 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.item {
+  flex: 1 1 auto;
+  margin: 0 5px;
+  font-size: 20px;
+  font-family: "Georgia";
+  color: #aeaeae;
+  line-height: 1.2;
+}
+
+.help {
+  padding: 0 calc(50% - 470px);
+  background-color: #ffffff;
+}
+
+.help h2 {
+  padding: 30px 0;
+  font-size: 35px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+  font-weight: normal;
+  text-align: center;
 }
 .main-section {
   background-image: url("../img/Dog-header.png");
@@ -612,17 +642,17 @@ h1 {
 }
 
 .color-text {
-  color: #F61067;
+  color: #f61067;
 }
 
 .swiper-button-next::after {
   content: url("../img/Arrow-r.png");
-  background-color: #F61067;
+  background-color: #f61067;
 }
 
 .swiper-button-prev::after {
   content: url("../img/Arrow-l.png");
-  background-color: #F61067;
+  background-color: #f61067;
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
