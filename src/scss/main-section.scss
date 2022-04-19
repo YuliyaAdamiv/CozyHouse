@@ -1,15 +1,17 @@
-.main-section{
-    background-image: url(../img/Dog-header.png);
-    padding: 0 calc(50% - 470px);
-    background-position: center center;
-    background-size: cover;
-    padding-top: 360px;
-    height:921px;
+.main-section {
+  background-image: url(../img/Dog-header.png);
+  padding: 0 calc(50% - 558px);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 5px;
+  height: 821px;
 }
 
-.main-section h1{
-    width:38%;
+.main-section h1 {
+  width: 35%;
+  padding-top: 290px;
+  font-weight: normal;
 }
-.main-section p{
-    width:50%;
+.main-section p {
+  width: 40%;
 }
