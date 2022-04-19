@@ -15,3 +15,36 @@
 .main-section p {
   width: 40%;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-section {
+    padding: 0 calc(50% - 80px);
+    height: 1321px;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 574px) {
+  .main-section {
+    padding: 0 calc(50% - 200px);
+    height: 981px;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  .main-section {
+    padding: 0 calc(50% - 250px);
+    padding-top: 15px;
+    height: 981px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-section {
+    padding: 0 calc(50% - 350px);
+    padding-top: 15px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1301px) {
+  .main-section {
+    padding: 0 calc(50% - 400px);
+    padding-top: 15px;
+  }
+}

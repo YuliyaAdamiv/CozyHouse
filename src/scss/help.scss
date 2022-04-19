@@ -25,3 +25,10 @@
   font-weight: normal;
   text-align: center;
 }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+}

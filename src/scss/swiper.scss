@@ -37,26 +37,6 @@
   margin-right: auto;
 }
 
-.swiper-slide h1 {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 118.8%;
-  text-align: start;
-}
-
-.swiper-slide p {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 31px;
-}
-
-.color-text {
-  color: #f61067;
-}
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -70,101 +50,34 @@
   content: url(../img/Arrow-l.png);
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  #slider {
-    width: 67%;
-    padding-left: 15px;
-  }
-  .swiper-slide h1 {
-    font-size: 40px;
-    line-height: 120%;
-    width: 50%;
-  }
+@media (min-width: 320px) and (max-width: 1024px) {
   .swiper-slide {
-    padding-left: 40px;
-  }
-  .swiper-slide p {
-    font-size: 16px;
-    line-height: 20px;
-    width: 50%;
-    margin-top: 20px;
-  }
-  .btn {
-    font-size: 10px;
-    line-height: 20px;
-    text-align: center;
-    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
-    width: 70%;
-  }
-  .slider {
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 575px) and (max-width: 767px) {
-  #slider {
-    width: 65%;
-  }
-  .swiper-slide h1 {
-    font-size: 40px;
-    line-height: 90%;
-    width: 50%;
-    margin-top: 150px;
-  }
-  .swiper-slide p {
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 80px;
+    padding: 0;
+    text-align: center;
   }
   .btn {
     font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    margin: 10px 0px;
-    align-items: center;
-    padding: 10px 20px;
-    width: 70%;
+    line-height: 18px;
   }
-  .slider {
-    padding-bottom: 50px;
+  .swiper-slide div {
+    margin: 15px;
   }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  #slider {
-    width: 80%;
-    padding: 0 calc(50% - 470px);
-  }
-  .swiper-slide h1 {
-    font-size: 60px;
-    line-height: 118.8%;
-  }
-  .swiper-slide p {
-    font-size: 20px;
-    line-height: 31px;
-  }
-  .slider {
-    padding-bottom: 50px;
+  .swiper-card {
+    width: 50%;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   #slider {
-    width: 85%;
+    width: 90%;
   }
-  .swiper-slide h1 {
-    font-size: 70px;
-    line-height: 118.8%;
+  .swiper-slide {
+    padding: 0 43px;
   }
-  .slider {
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 1201px) {
-  #slider {
-    width: 100%;
+  .swiper-slide div {
+    margin: 0 5px;
   }
 }

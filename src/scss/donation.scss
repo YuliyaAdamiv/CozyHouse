@@ -13,14 +13,16 @@ input {
   font-family: 'Times New Roman';
   color: rgb(41, 41, 41);
   line-height: 2.25;
-}
-.myform {
   position: relative;
 }
+
 .icon-credit-card {
   position: absolute;
-  margin-top: 14px;
-  margin-left: 20px;
+  // top: 80%;
+  left: 50%;
+  margin-left: 80px;
+  margin-top: 40px;
+  transform: translate(-50%, -50%);
   font-size: 1.5em;
 }
 
@@ -45,4 +47,99 @@ label {
   margin-top: 50px;
   width: 494px;
   height: 254px;
+}
+@media (min-width: 320px) and (max-width: 574px) {
+  .donation {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .dog-brown {
+    margin: 0 50px;
+    margin-top: 20px;
+  }
+  .donation-text {
+    width: 60%;
+  }
+  input {
+    font-size: 15px;
+    width: 80%;
+  }
+  .icon-credit-card {
+    position: absolute;
+    margin-left: -22%;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .donation {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .dog-brown {
+    width: 70%;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .donation-text {
+    width: 60%;
+  }
+  .icon-credit-card {
+    position: absolute;
+    margin-left: -22%;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1401px) {
+  .donation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation-text {
+    padding: 0 calc(50% - 370px);
+  }
+  .dog-brown {
+    height: 100%;
+  }
+  input {
+    display: block;
+  }
+  .icon-credit-card {
+    position: absolute;
+    margin-left: -340px;
+    z-index: 10;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1401px) {
+  .dog-brown {
+    width: 100%;
+  }
+  input {
+    display: block;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .dog-brown {
+    width: 100%;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1800px) {
+  .dog-brown {
+    width: 90%;
+  }
 }
