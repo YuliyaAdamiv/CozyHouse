@@ -25,11 +25,10 @@
 .swiper-slide {
   display: flex;
   flex-direction: row;
-  padding: 0 10px;
+  padding: 0 100px;
   text-align: center;
 }
 .swiper-slide div {
-  flex: 1 1 auto;
   margin: 0 15px;
 }
 .get {
@@ -58,16 +57,17 @@
 .color-text {
   color: #f61067;
 }
-
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 38%;
+}
 .swiper-button-next::after {
   content: url(../img/Arrow-r.png);
-  background-color: #f61067;
 }
 
 .swiper-button-prev::after {
   content: url(../img/Arrow-l.png);
-  background-color: #f61067;
-  // margin-right: 50px;
 }
 
 @media (min-width: 320px) and (max-width: 574px) {

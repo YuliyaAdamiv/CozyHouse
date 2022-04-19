@@ -273,7 +273,7 @@ li:first-child {
   list-style: none;
   color: white;
   height: 600px;
-  background-color: orange;
+  background-color: #f1cdb3;
   padding: 0 calc(50% - 375px);
 }
 
@@ -412,7 +412,7 @@ li:first-child {
   background-position: center center;
   background-size: cover;
   padding-top: 5px;
-  height: 100vh;
+  height: 821px;
 }
 
 .main-section h1 {
@@ -692,12 +692,11 @@ h1 {
 .swiper-slide {
   display: flex;
   flex-direction: row;
-  padding: 0 10px;
+  padding: 0 100px;
   text-align: center;
 }
 
 .swiper-slide div {
-  flex: 1 1 auto;
   margin: 0 15px;
 }
 
@@ -728,14 +727,18 @@ h1 {
   color: #f61067;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 38%;
+}
+
 .swiper-button-next::after {
   content: url("../img/Arrow-r.png");
-  background-color: #f61067;
 }
 
 .swiper-button-prev::after {
   content: url("../img/Arrow-l.png");
-  background-color: #f61067;
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
