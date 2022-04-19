@@ -1,0 +1,48 @@
+.donation {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 110px;
+  padding: 50px calc(50% - 550px);
+}
+input {
+  border-radius: 9px;
+  background-color: rgb(241, 205, 179);
+  height: 47px;
+  padding-left: 55px;
+  font-size: 20px;
+  font-family: 'Times New Roman';
+  color: rgb(41, 41, 41);
+  line-height: 2.25;
+}
+.myform {
+  position: relative;
+}
+.icon-credit-card {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.donation h2 {
+  font-size: 35px;
+  font-family: 'Georgia';
+  color: rgb(84, 84, 84);
+  line-height: 1.286;
+  font-weight: normal;
+}
+.donation form {
+  font-size: 15px;
+  font-family: 'Georgia';
+  color: rgb(84, 84, 84);
+  line-height: 1.286;
+}
+label {
+  margin-bottom: 10px;
+}
+
+.dog-brown {
+  margin-top: 50px;
+  width: 494px;
+  height: 254px;
+}

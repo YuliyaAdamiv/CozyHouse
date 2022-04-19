@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Cozy House</title>
 </head>
@@ -163,7 +162,7 @@
                     <p>Bowls and cups</p>
                 </div>
                 <div class="item">
-                    <img src="img/shampooo.png" alt='shampoo'>
+                    <img src="img/shampoo.png" alt='shampoo'>
                     <p>Shampoos</p>
                 </div>
             </div>
@@ -186,20 +185,29 @@
                  </div>
             </div>   
          </section>
-         <!-- <section>
-            <h2>
-                In addition, you can make a donation 
-            </h2>
-            <form>
-                <label>Name of the bank / Type of the bank account</label>
-                <input>
-            </form>
-            <p>Legal information and lorem ipsum dolor sit amet. Aenean interdum vulputate libero at iaculis. 
-               Nunc nec scelerisque magna. Donec tristique ante eget libero elementum aliquam. Quisque metus augue, 
-               elementum quis dui eget, efficitur dapibus leo. Nam et orci elit.</p>
+         <section class="donation">
+           
+                <img class="dog-brown" src="img/Dog-brown.png" alt='dog'>
+           
+            <div>
+                <h2>
+                    In addition, you <br/>can make a donation 
+                </h2>
+                    <form name="myform">
+                        <label>Name of the bank / Type of the bank account</label>
+                        <i class="icon-credit-card"></i>
+                        <input name="CreditCardNumber" inputmode="numeric" value="8380 8028 8791 7435" />
+                    </form>
+               
+                <p>Legal information and lorem ipsum dolor sit amet. Aenean interdum vulputate libero at iaculis. 
+                   Nunc nec scelerisque magna. Donec tristique ante eget libero elementum aliquam. Quisque metus augue, 
+                   elementum quis dui eget, efficitur dapibus leo. Nam et orci elit.
+                </p>
+            </div>
+           
         </section>
-    </main> --> 
-    <!-- <footer class="footer" id="footer"> -->
+    </main> 
+    <footer class="footer" id="footer">
         <!-- <ul class="nav-footer">
             <li>
                 <a href="#"><img class="logo-footer" src='img/Logo.png' alt="image"></a>
@@ -223,22 +231,30 @@
             </li>
         </ul> -->
       
-            <!-- <div>
-                <h3>For questions and suggestions</h3>
-                <img>
+            <div class="row">
+                <h3>For questions <br/>and suggestions</h3>
+                <div class="nav-footer">
+                    <img  class="email" src="img/email.png" alt="email">
                 <p>email@shelter.com</p>
-                <img>
+                </div>
+                <div class="nav-footer">
+                <img class="phone" src="img/phone.png" alt="phone">
                 <p>+136745677554</p>
+               </div>
             </div>
-            <div>
-                <h3>We are waiting for your visit</h3>
-                <img>
-                <p>Boston, Central Street, 1st</p>
-                <p>(Entrance from the store)</p>
-                <img>
-                <p>London, South Park, 18st</p>
+            <div class="row">
+                <h3>We are waiting <br/>for your visit</h3>
+                <div class="nav-footer">
+                    <img class="geozona"src="img/geozona.png" alt="geozona">
+                <p>Boston, Central Street, 1st<br/>(Entrance from the store)</p>
+                </div>
+              
+                <div class="nav-footer">
+                    <img class="geozona" src="img/geozona.png" alt="geozona">
+                    <p class="park">London, South Park, 18st</p>
+                </div>
             </div>
-    </footer> -->
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>

@@ -1,16 +1,74 @@
-.footer {
-  background: #150433;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.donation {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 110px;
+  padding: 50px calc(50% - 550px);
 }
 
-.logo-footer {
+input {
+  border-radius: 9px;
+  background-color: #f1cdb3;
+  height: 47px;
+  padding-left: 55px;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  color: #292929;
+  line-height: 2.25;
+}
+
+.myform {
+  position: relative;
+}
+
+.icon-credit-card {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.donation h2 {
+  font-size: 35px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+  font-weight: normal;
+}
+
+.donation form {
+  font-size: 15px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.dog-brown {
+  margin-top: 50px;
+  width: 494px;
+  height: 254px;
+}
+.footer {
+  background-image: url("../img/Dog-footer.png");
+  display: flex;
+  flex-direction: row;
+  padding: 0 calc(50% - 558px);
+}
+
+.footer h3 {
+  font-size: 35px;
+  font-family: "Georgia";
   color: white;
+  line-height: 1.286;
+  font-weight: normal;
+  margin-top: 80px;
+}
+
+.footer h3 {
+  margin-top: 90px;
 }
 
 .nav-footer {
@@ -18,12 +76,36 @@
   flex-direction: row;
 }
 
-.footer ul li:last-child {
-  margin-right: 0;
+.row + .row {
+  margin-left: 190px;
 }
 
-.footer ul li:first-child {
-  margin-left: 0;
+.row p {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  color: #f1cdb3;
+}
+
+.park {
+  line-height: 2.5;
+}
+
+.row {
+  margin-bottom: 38px;
+}
+
+.email,
+.phone {
+  margin-top: 5px;
+  line-height: 2.25;
+  margin-bottom: 40px;
+}
+
+.geozona {
+  width: 30px;
+  height: 40px;
+  margin-top: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
