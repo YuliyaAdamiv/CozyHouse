@@ -1,3 +1,4 @@
+@import './theme.scss';
 .box {
   display: flex;
   padding: 0 5px;
@@ -9,24 +10,30 @@
   margin: 0 5px;
   font-size: 20px;
   font-family: 'Georgia';
-  color: #aeaeae;
+  color: $text;
   line-height: 1.2;
 }
-.help {
+.help-inner {
   padding: 0 calc(50% - 558px);
-  background-color: #ffffff;
+  background-color: $white;
 }
-.help h2 {
+.help-inner h2 {
   padding: 30px 0;
   font-size: 35px;
   font-family: 'Georgia';
-  color: rgb(84, 84, 84);
+  color: $text-main;
   line-height: 1.286;
   font-weight: normal;
   text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .help {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .box {
     display: flex;
     flex-direction: column;

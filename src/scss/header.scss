@@ -1,8 +1,9 @@
+@import './theme.scss';
 header {
   position: absolute;
   font-size: 15px;
   font-family: 'Arial';
-  color: rgb(205, 205, 205);
+  color: $grey;
   line-height: 1.933;
   font-weight: 400;
   padding-top: 57px;
@@ -16,10 +17,6 @@ header {
   height: 80px;
   z-index: 1000;
   width: 100%;
-}
-
-input {
-  border: none;
 }
 
 .logo-active {
@@ -36,7 +33,7 @@ input {
 .nav-item {
   float: left;
   &:hover {
-    border-bottom: 2px solid #f1cdb3;
+    border-bottom: 2px solid $orange;
   }
 }
 
@@ -48,10 +45,10 @@ input {
 }
 
 a {
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   &:active {
-    color: #f1cdb3;
+    color: $orange;
   }
 }
 
@@ -60,7 +57,7 @@ li {
   margin-top: 10px;
   list-style-type: none;
   &:hover {
-    border-bottom: 2px solid #f1cdb3;
+    border-bottom: 2px solid $orange;
   }
 }
 
@@ -77,8 +74,8 @@ li:first-child {
 }
 
 .active {
-  color: #252525;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
 }
 
 .menu-item {
@@ -89,7 +86,7 @@ li:first-child {
   align-items: center;
   justify-content: center;
   &:hover {
-    border-bottom: 2px solid #f1cdb3;
+    border-bottom: 2px solid $orange;
   }
 }
 
@@ -110,7 +107,7 @@ li:first-child {
 
 .menu-icon,
 .close-icon {
-  color: #ffffff;
+  color: $white;
   margin: 0;
 }
 
@@ -127,9 +124,9 @@ li:first-child {
   right: 0;
   bottom: 0;
   list-style: none;
-  color: white;
+  color: $white;
   height: 600px;
-  background-color: #f1cdb3;
+  background-color: $orange;
   padding: 0 calc(50% - 375px);
 }
 
@@ -156,6 +153,7 @@ li:first-child {
 @media (min-width: 320px) and (max-width: 574px) {
   .hamburger {
     display: block;
+    right: calc(50% - 150px);
   }
   .nav {
     display: none;
@@ -183,12 +181,16 @@ li:first-child {
 @media (min-width: 768px) and (max-width: 1024px) {
   .hamburger {
     display: block;
+    right: calc(50% - 280px);
   }
   .nav {
     display: none;
   }
   .menu-content {
     visibility: visible;
+  }
+  .logo {
+    margin-left: -150px;
   }
 }
 
@@ -198,15 +200,25 @@ li:first-child {
     grid-template-columns: 2fr;
   }
   li {
+    margin-top: -10px;
     margin-right: 45px;
   }
   .menu-content {
     width: 0%;
+  }
+  .logo {
+    margin-left: -50px;
+  }
+  li:first-child {
+    margin-left: 50px;
   }
 }
 
 @media (min-width: 1301px) {
   .menu-content {
     width: 6%;
+  }
+  li {
+    margin-top: -10px;
   }
 }

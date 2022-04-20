@@ -1,11 +1,12 @@
+@import './theme.scss';
 .promo {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 110px;
-  background-color: #fafafa;
+  background-color: $background-body;
   background-size: 100% 100%;
   padding: 0 375px;
-  color: #ffffff;
+  color: $white;
   padding-bottom: 100px;
 }
 
@@ -26,15 +27,16 @@
 .promo h3 {
   font-size: 35px;
   font-family: 'Georgia';
-  color: rgb(84, 84, 84);
+  color: $text-main;
   line-height: 1.286;
   margin-top: 120px;
+  font-weight: normal;
 }
 
 .promo p {
   font-size: 15px;
   font-family: 'Arial';
-  color: rgb(76, 76, 76);
+  color: $promo-p;
   line-height: 1.6;
   margin-bottom: 39px;
 }
@@ -105,14 +107,20 @@
   .promo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0 220px;
   }
-  .promo-text {
-    padding: 0 calc(50% - 470px);
+
+  .img {
+    width: 70%;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .promo-item {
-    width: 80%;
+
+  .promo h3 {
+    text-align: center;
+    margin-top: 50px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1401px) {

@@ -1,3 +1,4 @@
+@import './theme.scss';
 .slider {
   padding: 0 calc(50% - 558px);
   background-position: center center;
@@ -7,18 +8,18 @@
 .slider h5 {
   font-size: 35px;
   font-family: 'Georgia';
-  color: rgb(84, 84, 84);
+  color: $text-main;
   line-height: 1.286;
   text-align: center;
   font-weight: normal;
 }
 .swiper-card {
-  background-color: #fafafa;
+  background-color: $background-body;
 }
 .swiper-card p {
   font-size: 20px;
   font-family: 'Georgia';
-  color: rgb(84, 84, 84);
+  color: $text-main;
   line-height: 2.25;
 }
 
@@ -41,6 +42,7 @@
 .swiper-button-prev {
   position: absolute;
   top: 38%;
+  width: calc(var(--swiper-navigation-size) / 44 * 30);
 }
 .swiper-button-next::after {
   content: url(../img/Arrow-r.png);
@@ -66,6 +68,9 @@
     margin: 15px;
   }
   .swiper-card {
+    width: 50%;
+  }
+  .swiper-slide img {
     width: 50%;
   }
 }
