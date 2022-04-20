@@ -85,7 +85,7 @@
   }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width:767px) {
   .donation {
     display: flex;
     padding: 0 50px;
@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1500px) {
+@media (min-width: 1401px) and (max-width:1500px) {
   .dog-brown {
     width: 100%;
   }
@@ -177,7 +177,7 @@
   }
 }
 
-@media (min-width: 1501px) and (max-width: 1800px) {
+@media (min-width: 1501px) and (max-width:1800px) {
   .dog-brown {
     width: 90%;
   }
@@ -189,7 +189,7 @@
   }
 }
 
-@media (min-width: 1801px) and (max-width: 1920px) {
+@media (min-width: 1801px) and (max-width:1920px) {
   .icon-credit-card {
     position: absolute;
     margin-left: 80px;
@@ -507,7 +507,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width:767px) {
   .hamburger {
     display: block;
   }
@@ -521,7 +521,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hamburger {
     display: block;
     right: calc(50% - 280px);
@@ -652,7 +652,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width:767px) {
   .main-section {
     padding: 0 calc(50% - 250px);
     padding-top: 15px;
@@ -660,16 +660,18 @@ li:first-child {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main-section {
     padding: 0 calc(50% - 350px);
     padding-top: 15px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1301px) {
+@media (min-width: 1025px) and (max-width:1200px) {
   .main-section {
-    padding: 0 calc(50% - 400px);
+    background-position: center center;
+    background-size: cover;
+    padding: 0 calc(50% - 300px);
     padding-top: 15px;
   }
 }
@@ -752,7 +754,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width:767px) {
   .promo {
     display: flex;
     padding: 0 50px;
@@ -813,7 +815,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1500px) {
+@media (min-width: 1301px) {
   .img {
     width: 100%;
   }
@@ -828,7 +830,7 @@ li:first-child {
   }
 }
 
-@media (min-width: 1501px) and (max-width: 1800px) {
+@media (min-width: 1401px) and (max-width:1500px) {
   .img {
     width: 90%;
   }
@@ -981,7 +983,7 @@ h1 {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width:1200px) {
   #slider {
     width: 90%;
   }

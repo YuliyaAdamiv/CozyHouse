@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
+@media #{$mobile} {
   .help {
     display: flex;
     flex-direction: row;

@@ -52,7 +52,7 @@
   content: url(../img/Arrow-l.png);
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media #{$mobile-xy} {
   .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media #{$desktop-y} {
   #slider {
     width: 90%;
   }
