@@ -5,7 +5,8 @@
   padding: 50px calc(50% - 558px);
 }
 
-input {
+.donation input {
+  border: none;
   border-radius: 9px;
   background-color: #f1cdb3;
   height: 47px;
@@ -15,13 +16,14 @@ input {
   color: #292929;
   line-height: 2.25;
   position: relative;
+  margin-top: 15px;
 }
 
 .icon-credit-card {
   position: absolute;
   left: 50%;
   margin-left: 80px;
-  margin-top: 40px;
+  margin-top: 58px;
   transform: translate(-50%, -50%);
   font-size: 1.5em;
 }
@@ -41,8 +43,8 @@ input {
   line-height: 1.286;
 }
 
-label {
-  margin-bottom: 10px;
+.donation-text p {
+  font-style: italic;
 }
 
 .dog-brown {
@@ -62,7 +64,7 @@ label {
   }
 
   .dog-brown {
-    width: 80%;
+    width: 100%;
     margin: 0 50px;
     margin-top: 20px;
   }
@@ -94,7 +96,7 @@ label {
   }
 
   .dog-brown {
-    width: 70%;
+    width: 100%;
     margin-top: 50px;
     display: block;
     margin-left: auto;
@@ -121,7 +123,11 @@ label {
   }
 
   .donation-text {
-    padding: 0 calc(50% - 370px);
+    padding: 0 calc(50% - 250px);
+  }
+
+  .donation-text p {
+    width: 70%;
   }
 
   .dog-brown {
@@ -134,7 +140,7 @@ label {
 
   .icon-credit-card {
     position: absolute;
-    margin-left: -340px;
+    margin-left: -220px;
     z-index: 10;
   }
 }
@@ -150,7 +156,7 @@ label {
 
   .icon-credit-card {
     position: absolute;
-    margin-left: -340px;
+    margin-left: -220px;
     z-index: 10;
   }
 }
@@ -186,7 +192,7 @@ label {
     z-index: 10;
   }
 }
-.footer {
+footer {
   background-image: url("../img/Dog-footer.png");
   display: flex;
   flex-direction: row;
@@ -196,7 +202,7 @@ label {
   padding: 0 calc(50% - 518px);
 }
 
-.footer h3 {
+footer h3 {
   font-size: 35px;
   font-family: "Georgia";
   color: white;
@@ -205,7 +211,7 @@ label {
   margin-top: 80px;
 }
 
-.footer h3 {
+footer h3 {
   margin-top: 90px;
 }
 
@@ -235,9 +241,9 @@ label {
 
 .email,
 .phone {
-  margin-top: 25px;
+  margin-top: 15px;
   line-height: 2.25;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .geozona {
@@ -246,8 +252,8 @@ label {
   margin-top: 25px;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-  .footer {
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,13 +271,29 @@ label {
     margin-bottom: 38px;
   }
 
-  .footer h3 {
-    margin-top: 0px;
+  footer h3 {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .row + .row {
+    margin-left: 90px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .footer {
+  footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -289,9 +311,6 @@ header {
   line-height: 1.933;
   font-weight: 400;
   padding-top: 57px;
-}
-
-.header-inner {
   display: flex;
   justify-content: center;
   background-color: transparent;
@@ -299,10 +318,6 @@ header {
   height: 80px;
   z-index: 1000;
   width: 100%;
-}
-
-input {
-  border: none;
 }
 
 .logo-active {
@@ -387,7 +402,7 @@ li:first-child {
   position: fixed;
   top: 60px;
   right: 5%;
-  right: calc(50% - 100px);
+  right: calc(50% - 350px);
   border: none;
   cursor: pointer;
   display: none;
@@ -445,6 +460,7 @@ li:first-child {
 @media (min-width: 320px) and (max-width: 574px) {
   .hamburger {
     display: block;
+    right: calc(50% - 150px);
   }
 
   .nav {
@@ -463,6 +479,7 @@ li:first-child {
 @media (min-width: 575px) and (max-width: 767px) {
   .hamburger {
     display: block;
+    right: calc(50% - 280px);
   }
 
   .nav {
@@ -489,23 +506,31 @@ li:first-child {
 }
 
 @media (min-width: 1025px) and (max-width: 1300px) {
-  .promo {
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-
   li {
     margin-right: 45px;
+    margin-top: -10px;
   }
 
   .menu-content {
     width: 0%;
+  }
+
+  .logo {
+    margin-left: 80px;
+  }
+
+  li:first-child {
+    margin-left: 150px;
   }
 }
 
 @media (min-width: 1301px) {
   .menu-content {
     width: 6%;
+  }
+
+  li {
+    margin-top: -10px;
   }
 }
 .box {
@@ -524,12 +549,12 @@ li:first-child {
   line-height: 1.2;
 }
 
-.help {
+.help-inner {
   padding: 0 calc(50% - 558px);
   background-color: #ffffff;
 }
 
-.help h2 {
+.help-inner h2 {
   padding: 30px 0;
   font-size: 35px;
   font-family: "Georgia";
@@ -540,6 +565,13 @@ li:first-child {
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .help {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .box {
     display: flex;
     flex-direction: column;
@@ -590,8 +622,9 @@ li:first-child {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-section {
-    padding: 0 calc(50% - 350px);
+    padding: 0 calc(50% - 250px);
     padding-top: 15px;
+    height: 1000px;
   }
 }
 
@@ -620,23 +653,20 @@ li:first-child {
 
 .img {
   margin-top: 90px;
-  z-index: 100;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .promo h3 {
   font-size: 35px;
-  font-family: "Georgia";
+  font-family: Georgia;
   color: #545454;
   line-height: 1.286;
   margin-top: 120px;
+  font-weight: normal;
 }
 
 .promo p {
   font-size: 15px;
-  font-family: "Arial";
+  font-family: Arial, sans-serif;
   color: #4c4c4c;
   line-height: 1.6;
   margin-bottom: 39px;
@@ -717,16 +747,20 @@ li:first-child {
   .promo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0 220px;
   }
 
-  .promo-text {
-    padding: 0 calc(50% - 470px);
+  .img {
+    width: 70%;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .promo-item {
-    width: 80%;
+  .promo h3 {
+    text-align: center;
+    margin-top: 50px;
   }
 }
 
@@ -811,6 +845,7 @@ h1 {
   border-radius: 30px;
   border: none;
   color: #000;
+  border: 2px solid #f1cdb3;
   cursor: pointer;
 }
 
@@ -871,6 +906,7 @@ h1 {
 .swiper-button-prev {
   position: absolute;
   top: 38%;
+  width: calc(var(--swiper-navigation-size) / 44 * 30);
 }
 
 .swiper-button-next::after {
@@ -881,7 +917,7 @@ h1 {
   content: url("../img/Arrow-l.png");
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -900,6 +936,37 @@ h1 {
   }
 
   .swiper-card {
+    width: 50%;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .swiper-slide div {
+    margin: 15px;
+  }
+
+  .swiper-card {
+    width: 50%;
+  }
+
+  .swiper-slide img {
     width: 50%;
   }
 }
