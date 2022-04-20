@@ -126,10 +126,6 @@
     padding: 0 calc(50% - 250px);
   }
 
-  .dog-brown {
-    height: 100%;
-  }
-
   .donation-text p {
     width: 70%;
   }
@@ -150,10 +146,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1401px) {
-  .dog-brown {
-    width: 100%;
-  }
-
   input {
     display: block;
   }
@@ -166,26 +158,26 @@
 }
 
 @media (min-width: 1401px) and (max-width:1500px) {
-  .dog-brown {
-    width: 100%;
-  }
-
   .icon-credit-card {
     position: absolute;
     margin-left: 80px;
     z-index: 10;
+  }
+
+  .dog-brown {
+    width: 100%;
   }
 }
 
 @media (min-width: 1501px) and (max-width:1800px) {
-  .dog-brown {
-    width: 90%;
-  }
-
   .icon-credit-card {
     position: absolute;
     margin-left: 80px;
     z-index: 10;
+  }
+
+  .dog-brown {
+    width: 90%;
   }
 }
 
@@ -200,6 +192,7 @@ footer {
   background-image: url("../img/Dog-footer.png");
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,9 +238,11 @@ footer h3 {
 
 .email,
 .phone {
-  margin-top: 15px;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
   line-height: 2.25;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .geozona {
@@ -308,7 +303,6 @@ footer h3 {
   footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     background-position: center center;
     background-size: cover;
@@ -324,7 +318,6 @@ footer h3 {
   footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     background-position: center center;
     background-size: cover;
@@ -339,9 +332,6 @@ header {
   line-height: 1.933;
   font-weight: 400;
   padding-top: 57px;
-}
-
-.header-inner {
   display: flex;
   justify-content: center;
   background-color: transparent;
@@ -379,22 +369,22 @@ header {
   list-style-type: none;
 }
 
-a {
+header a {
   color: #ffffff;
   text-decoration: none;
 }
 
-a:active {
+header a:active {
   color: #f1cdb3;
 }
 
-li {
+header li {
   margin-right: 40px;
   margin-top: 10px;
   list-style-type: none;
 }
 
-li:hover {
+header li:hover {
   border-bottom: 2px solid #f1cdb3;
 }
 
@@ -402,11 +392,11 @@ li:hover {
   width: 50%;
 }
 
-li:last-child {
+header li:last-child {
   margin-right: 0;
 }
 
-li:first-child {
+header li:first-child {
   margin-left: 310px;
 }
 
@@ -510,6 +500,7 @@ li:first-child {
 @media (min-width: 575px) and (max-width:767px) {
   .hamburger {
     display: block;
+    right: calc(50% - 230px);
   }
 
   .nav {
@@ -546,7 +537,7 @@ li:first-child {
     grid-template-columns: 2fr;
   }
 
-  li {
+  header li {
     margin-top: -10px;
     margin-right: 45px;
   }
@@ -559,7 +550,7 @@ li:first-child {
     margin-left: -50px;
   }
 
-  li:first-child {
+  header li:first-child {
     margin-left: 50px;
   }
 }
@@ -569,7 +560,7 @@ li:first-child {
     width: 6%;
   }
 
-  li {
+  header li {
     margin-top: -10px;
   }
 }
@@ -638,7 +629,10 @@ li:first-child {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .main-section {
-    padding: 0 calc(50% - 80px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 calc(50% - 120px);
     height: 1321px;
     padding-top: 15px;
   }
@@ -667,11 +661,11 @@ li:first-child {
   }
 }
 
-@media (min-width: 1025px) and (max-width:1200px) {
+@media (min-width: 1025px) and (max-width: 1300px) {
   .main-section {
-    background-position: center center;
+    justify-content: flex-end;
     background-size: cover;
-    padding: 0 calc(50% - 300px);
+    padding: 0 calc(50% - 400px);
     padding-top: 15px;
   }
 }
@@ -821,12 +815,16 @@ li:first-child {
   }
 
   .promo h3 {
-    margin-top: 170px;
+    margin-top: 70px;
     font-size: 2vw;
   }
 
   .promo p {
+    width: 60%;
     font-size: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

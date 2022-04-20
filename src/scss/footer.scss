@@ -3,6 +3,7 @@ footer {
   background-image: url(../img/Dog-footer.png);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,9 +42,11 @@ footer h3 {
 }
 .email,
 .phone {
-  margin-top: 15px;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
   line-height: 2.25;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .geozona {
@@ -95,7 +98,6 @@ footer h3 {
   footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     background-position: center center;
     background-size: cover;
@@ -109,7 +111,6 @@ footer h3 {
   footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     background-position: center center;
     background-size: cover;

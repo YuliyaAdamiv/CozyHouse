@@ -116,9 +116,7 @@
   .donation-text {
     padding: 0 calc(50% - 250px);
   }
-  .dog-brown {
-    height: 100%;
-  }
+
   .donation-text p {
     width: 70%;
   }
@@ -135,9 +133,6 @@
   }
 }
 @media #{$desktop-x} {
-  .dog-brown {
-    width: 100%;
-  }
   input {
     display: block;
   }
@@ -148,23 +143,23 @@
   }
 }
 @media #{$extra-large-x} {
+  .icon-credit-card {
+    position: absolute;
+    margin-left: 80px;
+    z-index: 10;
+  }
   .dog-brown {
     width: 100%;
   }
-  .icon-credit-card {
-    position: absolute;
-    margin-left: 80px;
-    z-index: 10;
-  }
 }
 @media #{$extra-large-xx} {
-  .dog-brown {
-    width: 90%;
-  }
   .icon-credit-card {
     position: absolute;
     margin-left: 80px;
     z-index: 10;
+  }
+  .dog-brown {
+    width: 90%;
   }
 }
 @media #{$extra-large-xxl} {

@@ -134,12 +134,16 @@
   }
 
   .promo h3 {
-    margin-top: 170px;
+    margin-top: 70px;
     font-size: 2vw;
   }
 
   .promo p {
+    width: 60%;
     font-size: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media #{$extra-large-x} {

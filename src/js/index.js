@@ -34,7 +34,7 @@ menuItems.forEach(function (menuItem) {
 });
 $(document).ready(function () {
   $(window).scroll(function () {
-    $('.header-inner').toggleClass('active', $(window).scrollTop() > 20);
+    $('header').toggleClass('active', $(window).scrollTop() > 20);
     $('.menu').toggleClass('active', $(window).scrollTop() > 20);
     $('.menu-icon').toggleClass('logo-active', $(window).scrollTop() > 20);
     $('.close-icon').toggleClass('logo-active', $(window).scrollTop() > 20);

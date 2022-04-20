@@ -18,7 +18,10 @@
 }
 @media #{$mobile-x} {
   .main-section {
-    padding: 0 calc(50% - 80px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 calc(50% - 120px);
     height: 1321px;
     padding-top: 15px;
   }
@@ -43,11 +46,11 @@
     padding-top: 15px;
   }
 }
-@media #{$desktop-y} {
+@media #{$desktop-xxl} {
   .main-section {
-    background-position: center center;
+    justify-content: flex-end;
     background-size: cover;
-    padding: 0 calc(50% - 300px);
+    padding: 0 calc(50% - 400px);
     padding-top: 15px;
   }
 }
