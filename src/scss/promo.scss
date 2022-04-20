@@ -100,7 +100,7 @@
   }
 }
 
-@media #{$tablet-xxl} {
+@media #{$tablet} {
   .promo {
     display: flex;
     flex-direction: column;
@@ -126,36 +126,14 @@
   }
 }
 @media #{$desktop-x} {
-  .img {
-    width: 100%;
-  }
-}
-@media #{$extra-large} {
-  .img {
-    width: 100%;
-  }
-
-  .promo h3 {
-    margin-top: 70px;
-    font-size: 2vw;
-  }
-
-  .promo p {
-    width: 60%;
-    font-size: 1vw;
-  }
-}
-@media #{$extra-large-x} {
-  .img {
-    width: 100%;
-  }
-
-  .promo h3 {
-    margin-top: 80px;
-    font-size: 2vw;
-  }
-
-  .promo p {
-    font-size: 1vw;
+  .promo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 70px;
+    background-color: $background-body;
+    background-size: 100% 100%;
+    padding: 0 200px;
+    color: $white;
+    padding-bottom: 100px;
   }
 }

@@ -132,13 +132,29 @@
     z-index: 10;
   }
 }
-@media #{$desktop-x} {
-  input {
-    display: block;
+@media #{$desktop-xxl} {
+  .donation {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 50px;
+    padding: 50px calc(50% - 558px);
   }
   .icon-credit-card {
     position: absolute;
-    margin-left: -220px;
+    margin-left: 65px;
+    z-index: 10;
+  }
+}
+@media #{$light-x} {
+  .donation {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 50px;
+    padding: 50px calc(50% - 558px);
+  }
+  .icon-credit-card {
+    position: absolute;
+    margin-left: 70px;
     z-index: 10;
   }
 }
