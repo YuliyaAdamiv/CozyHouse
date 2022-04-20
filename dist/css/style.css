@@ -49,8 +49,8 @@
 
 .dog-brown {
   margin-top: 50px;
-  width: 494px;
-  height: 254px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
@@ -114,7 +114,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1401px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .donation {
     display: flex;
     flex-direction: column;
@@ -128,10 +128,6 @@
 
   .donation-text p {
     width: 70%;
-  }
-
-  .dog-brown {
-    height: 100%;
   }
 
   input {
@@ -149,13 +145,16 @@
   .donation {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-gap: 50px;
+    grid-gap: 30px;
     padding: 50px calc(50% - 558px);
   }
 
+  input {
+    display: block;
+  }
+
   .icon-credit-card {
-    position: absolute;
-    margin-left: 65px;
+    margin-left: 50px;
     z-index: 10;
   }
 }
@@ -168,9 +167,13 @@
     padding: 50px calc(50% - 558px);
   }
 
+  input {
+    display: block;
+  }
+
   .icon-credit-card {
     position: absolute;
-    margin-left: 70px;
+    margin-left: 62px;
     z-index: 10;
   }
 }
@@ -192,10 +195,6 @@
     position: absolute;
     margin-left: 80px;
     z-index: 10;
-  }
-
-  .dog-brown {
-    width: 90%;
   }
 }
 
